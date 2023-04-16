@@ -1,6 +1,9 @@
 .main {
   display:flex;
+  overflow: hidden ;
+  overflow-x: hidden;
   outline:1px solid green;
-  width:100px;
-  height:100px;
+  width: 100vw;
 }
+
+ 
