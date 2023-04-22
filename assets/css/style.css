@@ -29,6 +29,7 @@ body{
   background-color: hsl(0, 0%, 100%);;
 }
 
+
 .progress-title{
   font-weight: 700;
   font-size: 1.5rem;
@@ -43,9 +44,9 @@ body{
   justify-content:space-around;
   padding:10px;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  /* margin:10px; */
   border-radius:20px;
 }
+
 .progress-display{
   width: 200px;
   height: 200px;
@@ -55,7 +56,6 @@ body{
   align-items:center;
   background:linear-gradient(180deg, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
   border-radius:50%;
-
 }
 
 .total{
@@ -87,9 +87,9 @@ body{
   
 }
 .summary-title{
+  font-weight: 700;
   color:hsl(224, 30%, 27%);
   font-size: 1.5rem;
-  font-weight: 700;
 }
 .summary{ 
   padding: 20px;
@@ -100,7 +100,6 @@ body{
   align-items: start;
   gap: 10px;
   width:100%;
-  min-height:500px;
 
 }
 .summary-itens{
@@ -151,7 +150,7 @@ body{
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   background: hsl(220 40% 20%);
-
+  
 }
 .percent{
   color:hsl(241, 100%, 89%);
@@ -165,7 +164,7 @@ body{
   background-color: hsl(39, 100%, 56%,0.2);
 }
 .bg-green{  
- background-color:hsl(166, 100%, 37%,0.1);
+  background-color:hsl(166, 100%, 37%,0.1);
 }
 .bg-blue{
   background-color:hsl(234, 85%, 45%,0.1);
@@ -173,7 +172,7 @@ body{
 
 
 .color-red{
- color: hsl(0, 100%, 67%);
+  color: hsl(0, 100%, 67%);
 }
 .color-yellow{
   color: hsl(39, 100%, 56%);
@@ -191,4 +190,59 @@ body{
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px){
+  .main {
+    font-size: 16px;
+    min-height: 60vh;
+  }
+  .border{
+    display: flex;
+    min-width: 200px;
+    flex-direction: column;
+  } 
+  .progress {
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .progress-information{
+    width: 100%;
+  }
+
+  .summary{ 
+    padding: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between; 
+    align-items: start;
+    width:100%;
+    gap: 10px;
+    /* outline: 1px solid red; */
+  
+  }
+
+  .summary-itens{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    /* outline: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .summary-itens li{
+    height:15%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    font-weight: 500;
+    /* outline: 1px solid green; */
+  }
 }
